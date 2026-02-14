@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Riah Kibz | Portfolio ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- MODERN GOOGLE FONTS -->
+  <style>
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  
+  <!-- FONT AWESOME ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- CSS INSIDE HTML -->
+  <style>
+    /* MODERN ANIMATIONS */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.08);
+      }
+    }
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+    @keyframes shimmer {
+      0% {
+        background-position: -1000px 0;
+      }
+      100% {
+        background-position: 1000px 0;
+      }
+    }
+    @keyframes gradientShift {
+      0%, 100% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes scaleIn {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    @keyframes fillLove {
+      0%, 100% {
+        stroke-dashoffset: 0;
+        filter: drop-shadow(0 0 15px rgba(91, 163, 255, 0.4));
+      }
+      50% {
+        filter: drop-shadow(0 0 25px rgba(91, 163, 255, 0.7));
+      }
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0a0817, #1a1a3e, #0f1428);
+      background-attachment: fixed;
+      color: #f5f5f5;
+      animation: fadeIn 0.8s ease-out;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    #portfolioContent {
+      flex: 1;
+    }
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      color: #ffffff;
+    }
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+    }
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    header {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      background: rgba(107, 157, 255, 0.25);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(107, 157, 255, 0.5);
+      animation: slideInLeft 0.6s ease-out;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 8px 32px rgba(107, 157, 255, 0.3);
+    }
+    header .header-button {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background: rgba(107, 157, 255, 0.2);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      color: #ffffff;
+      border: 1px solid rgba(107, 157, 255, 0.5);
+      border-radius: 12px;
+      font-size: 0.9rem;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      margin: 0;
+      animation: none;
+      box-shadow: 0 8px 32px rgba(107, 157, 255, 0.15);
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+    }
+    header .header-button:hover {
+      background: rgba(107, 157, 255, 0.25);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(107, 157, 255, 0.3);
+      border-color: rgba(107, 157, 255, 0.5);
+    }
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 1rem;
+    }
+    /*WELCOME SECTION */
+    section#welcome {
+      text-align: center;
+      padding: 6rem 2rem 4rem 2rem; 
+      animation: fadeIn 1s ease-out;
+    }
+    /* .logout-btn styles */
+    section > h1 {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+      animation: fadeIn 1s ease-out;
+    }
+    /* SECTION HEADINGS */
+    section > h2 {
+      text-align: left;
+      width: fit-content;
+      margin: 0 auto 3rem auto;
+      color: #ffffff;
+      background: rgba(107, 157, 255, 0.22);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(107, 157, 255, 0.4);
+      padding: 1.5rem 2.5rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      animation: slideInRight 0.6s ease-out;
+      box-shadow: 0 8px 32px rgba(107, 157, 255, 0.2);
+    }
+    section > h2:hover {
+      background: rgba(107, 157, 255, 0.25);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(107, 157, 255, 0.3);
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+    /* LOVE MESSAGE */
+    .love-message {
+      text-align: left;
+      font-size: 1.3rem;
+      background: rgba(107, 157, 255, 0.2);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(107, 157, 255, 0.4);
+      padding: 2.5rem;
+      border-radius: 16px;
+      border-left: #5ba3ff 3px solid;
+      border-right: #5ba3ff 3px solid;
+      max-width: 700px;
+      margin: 0 auto 3rem;
+      animation: slideInRight 0.8s ease-out;
+      transition: all 0.4s ease;
+      font-style: italic;
+      color: #ffffff;
+      line-height: 1.8;
+      box-shadow: 0 8px 32px rgba(107, 157, 255, 0.25);
+    }
+    .love-message:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(107, 157, 255, 0.25);
+      background: rgba(107, 157, 255, 0.2);
+      border-color: rgba(107, 157, 255, 0.5);
+    }
+    /* FOOTER */
+    footer {
+      text-align: left;
+      padding: 2rem;
+      background: rgba(107, 157, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(107, 157, 255, 0.3);
+      color: #f0f0f0;
+      animation: slideInRight 0.6s ease-out;
+      transition: all 0.4s ease;
+      font-size: 1.1rem;
+    }
+    footer:hover {
+      background: rgba(255, 255, 255, 0.08);
+      transform: translateY(-3px);
+      box-shadow: 0 -10px 25px rgba(107, 157, 255, 0.2);
+    }
+    /* LOGIN PAGE STYLES */
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      background-attachment: fixed;
+      animation: fadeIn 0.8s ease-out;
+      padding: 1rem;
+    }
+    .login-box {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      width: 100%;
+      max-width: 420px;
+      animation: slideInLeft 0.6s ease-out;
+    }
+    .login-box h1 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 2rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    .login-box input {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      font-size: 1rem;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+      color: #ffffff;
+      transition: all 0.3s ease;
+    }
+    .login-box input::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+    .login-box input:focus {
+      outline: none;
+      border-color: rgba(107, 157, 255, 0.5);
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 20px rgba(107, 157, 255, 0.2);
+    }
+    .login-box button {
+      width: 100%;
+      padding: 1rem;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      animation: none;
+    }
+    .login-box button:hover {
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4);
+    }
+    .login-error {
+      color: #6b9dff;
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      display: none;
+      animation: slideInLeft 0.4s ease-out;
+    }
+    .portfolio-content {
+      display: none;
+    }
+    .portfolio-content.active {
+      display: block;
+    }
+   
+    /* BACK TO TOP BUTTON */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, #5ba3ff, #7cb3ff);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 25px rgba(91, 163, 255, 0.5);
+      animation: scaleIn 0.3s ease;
+    }
+    .back-to-top.show {
+      display: flex;
+    }
+    .back-to-top:hover {
+      transform: translateY(-5px) scale(1.1);
+      box-shadow: 0 10px 35px rgba(91, 163, 255, 0.6);
+    }
+    .back-to-top:active {
+      transform: translateY(-2px) scale(1.05);
+    }
+    /* FOOTER */
+    .footer {
+      background: rgba(107, 157, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(107, 157, 255, 0.4);
+      padding: 2rem;
+      text-align: center;
+      margin-top: 2rem;
+      animation: fadeIn 1s ease-out;
+    }
+    .footer-btn {
+      padding: 1rem 2rem;
+      background: rgba(107, 157, 255, 0.22);
+      backdrop-filter: blur(10px);
+      color: #ffffff;
+      border: 1px solid rgba(107, 157, 255, 0.4);
+      border-radius: 12px;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      animation: none;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+    .footer-btn:hover {
+      background: rgba(107, 157, 255, 0.35);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(59, 130, 246, 0.25);
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+    /* MESSAGE MODAL STYLES */
+    .message-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+      animation: fadeIn 0.3s ease-out;
+    }
+    .message-modal.active {
+      display: flex;
+    }
+    .message-container {
+      background: rgba(107, 157, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(107, 157, 255, 0.3);
+      border-radius: 20px;
+      padding: 3rem;
+      max-width: 500px;
+      width: 90%;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      animation: slideInUp 0.6s ease-out;
+    }
+    .message-header {
+      text-align: center;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .message-header h1 {
+      flex: 1;
+      font-size: 1.8rem;
+      margin: 0;
+      background: linear-gradient(135deg, #6b9dff, #ff6b9d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .message-close {
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .message-close:hover {
+      color: #6b9dff;
+      transform: scale(1.2);
+    }
+    .message-form-group {
+      margin-bottom: 1.5rem;
+    }
+    .message-form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .message-form-group textarea {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid rgba(107, 157, 255, 0.3);
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.05);
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      resize: vertical;
+      min-height: 150px;
+      transition: all 0.3s ease;
+    }
+    .message-form-group textarea:focus {
+      outline: none;
+      border-color: rgba(107, 157, 255, 0.8);
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 15px rgba(107, 157, 255, 0.2);
+    }
+    .message-form-group textarea::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .message-button-group {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .message-btn {
+      flex: 1;
+      padding: 1rem;
+      border: none;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    .message-send-btn {
+      background: linear-gradient(135deg, #6b9dff, #5a8fdd);
+      color: white;
+    }
+    .message-send-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(107, 157, 255, 0.3);
+    }
+    .message-send-btn:active {
+      transform: translateY(0);
+    }
+    .message-close-btn {
+      background: transparent;
+      border: 1px solid rgba(107, 157, 255, 0.5);
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .message-close-btn:hover {
+      background: rgba(107, 157, 255, 0.1);
+      border-color: rgba(107, 157, 255, 0.8);
+    }
+    .message-char-count {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.6);
+      margin-top: 0.5rem;
+      text-align: right;
+    }
+    .message-error {
+      background: rgba(255, 76, 76, 0.1);
+      border: 1px solid rgba(255, 76, 76, 0.3);
+      color: #ff9999;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      display: none;
+    }
+    .message-success {
+      background: rgba(76, 255, 76, 0.1);
+      border: 1px solid rgba(76, 255, 76, 0.3);
+      color: #99ff99;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      display: none;
+    }
+    /* Responsive design */
+    @media (max-width: 768px) {
+      body {
+        padding-top: 2rem;
+      }
+      .container {
+        padding: 1rem;
+      }
+      .header {
+        margin: -1rem -1rem 1rem -1rem;
+        padding: 1rem;
+      }
+      .header h2 {
+        font-size: 1.5rem;
+      }
+      .close-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+      }
+      .intro-box p {
+        font-size: 1rem;
+      }
+      .section-button h3 {
+        font-size: 1.2rem;
+      }
+      .love-grid {
+        grid-template-columns: 1fr;
+      }
+      .title-section {
+        margin-bottom: 2rem;
+      }
+    }
+    /* WHATSUP VIEW STYLES */
+  
+    .whatsup-label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .whatsup-textarea {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid rgba(107, 157, 255, 0.3);
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.05);
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      resize: vertical;
+      min-height: 150px;
+      transition: all 0.3s ease;
+    }
+    .whatsup-textarea:focus {
+      outline: none;
+      border-color: rgba(107, 157, 255, 0.8);
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 15px rgba(107, 157, 255, 0.2);
+    }
+  /* WHATSUP BUTTONS MATCHING LOCKED BUTTON STYLE */
+.whatsup-button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center; /* center the buttons horizontally */
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.whatsup-back-btn,
+.whatsup-send-btn {
+  flex: 1; /* makes both buttons equal width */
+  min-width: 180px; 
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(107, 157, 255, 0.3);
+  background: rgba(59, 130, 246, 0.2);
+  color: #ffffff;
+}
+.whatsup-back-btn i,
+.whatsup-send-btn i {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+/* Hover effect */
+.whatsup-back-btn:hover,
+.whatsup-send-btn:hover {
+  background: rgba(107, 157, 255, 0.35);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(59, 130, 246, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+/* Active press effect */
+.whatsup-back-btn:active,
+.whatsup-send-btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.2);
+}
+    .whatsup-char-count {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.6);
+      margin-top: 0.5rem;
+      text-align: right;
+    }
+    .whatsup-error {
+      background: rgba(255, 76, 76, 0.1);
+      border: 1px solid rgba(255, 76, 76, 0.3);
+      color: #ff9999;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      display: none;
+    }
+    .whatsup-success {
+      background: rgba(76, 255, 76, 0.1);
+      border: 1px solid rgba(76, 255, 76, 0.3);
+      color: #99ff99;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      display: none;
+    }
+    /* VALENTINE QUIZ STYLES */
+    #valentineQuiz {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      animation: fadeIn 1s ease-out;
+    }
+    #valentineQuiz h2 {
+      text-align: center;
+      margin-bottom: 3rem;
+      font-size: 2.5rem;
+      background: linear-gradient(135deg, #6b9dff, #85b4ff);
+      -webkit-background-clip: text;
+      border-left: #3b82f6 3px solid;
+      border-right: #3b82f6 3px solid;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .container {
+      background: rgba(107, 157, 255, 0.2);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(107, 157, 255, 0.4);
+      border-radius: 16px;
+      padding: 3rem;
+      box-shadow: 0 8px 32px rgba(107, 157, 255, 0.25);
+      animation: slideInLeft 0.8s ease-out;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .container:hover {
+      background: rgba(107, 157, 255, 0.2);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(107, 157, 255, 0.3);
+      border-color: rgba(107, 157, 255, 0.5);
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+      animation: fadeIn 0.8s ease-out;
+    }
+    .title-box {
+      background: linear-gradient(135deg, rgba(107, 157, 255, 0.2), rgba(91, 163, 255, 0.2));
+      padding: 2rem;
+      border-radius: 15px;
+      border: 1px solid rgba(107, 157, 255, 0.3);
+    }
+    .heart {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    .title-box h1 {
+      font-size: 2rem;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+    .subtitle {
+      color: #f0f0f0;
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+    .content {
+      min-height: 300px;
+    }
+    .question-section {
+      animation: fadeIn 0.6s ease-out;
+      transition: all 0.4s ease;
+      padding: 0.5rem 0;
+    }
+    .question-section.hidden {
+      display: none;
+    }
+    .question {
+      background: rgba(107, 157, 255, 0.18);
+      backdrop-filter: blur(10px);
+      border: 1.5px solid rgba(107, 157, 255, 0.4);
+      border-left: #5ba3ff 4px solid;
+      border-right: #5ba3ff 4px solid;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      font-size: 1.3rem;
+      color: #ffffff;
+      font-weight: 600;
+      animation: slideInLeft 0.6s ease-out;
+      box-shadow: 0 8px 32px rgba(107, 157, 255, 0.2);
+      letter-spacing: 0.3px;
+      line-height: 1.6;
+    }
+    .answer-options {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-bottom: 2rem;
+      animation: slideInUp 0.6s ease-out backwards 0.2s;
+    }
+    .btn-option {
+      padding: 1rem 1.5rem;
+      background: rgba(107, 157, 255, 0.18);
+      backdrop-filter: blur(10px);
+      color: #ffffff;
+      border: 1.5px solid rgba(107, 157, 255, 0.4);
+      border-left: #5ba3ff 3px solid;
+      border-right: #5ba3ff 3px solid;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      animation: slideInRight 0.6s ease-out backwards;
+      box-shadow: 0 8px 32px rgba(91, 163, 255, 0.2);
+    }
+    .btn-option:nth-child(1) { animation-delay: 0.1s; }
+    .btn-option:nth-child(2) { animation-delay: 0.2s; }
+    .btn-option:nth-child(3) { animation-delay: 0.3s; }
+    .btn-option:hover {
+      background: rgba(107, 157, 255, 0.25);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(59, 130, 246, 0.35);
+      border-color: rgba(107, 157, 255, 0.5);
+    }
+    .btn-option:active {
+      transform: translateY(-1px);
+      background: rgba(107, 157, 255, 0.3);
+    }
+    #customAnswerInput {
+      background: rgba(107, 157, 255, 0.18);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid rgba(107, 157, 255, 0.3);
+      animation: fadeIn 0.6s ease-out;
+    }
+    #customAnswerInput p {
+      color: #5ba3ff;
+      font-size: 1.1rem;
+    }
+    #customAnswer {
+      width: 100%;
+      padding: 1rem;
+      border: 2px solid #5ba3ff !important;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      background: rgba(107, 157, 255, 0.2) !important;
+      color: #ffffff;
+      transition: all 0.3s ease;
+      box-sizing: border-box;
+    }
+    #customAnswer::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    #customAnswer:focus {
+      outline: none;
+      border-color: #5ba3ff !important;
+      background: rgba(107, 157, 255, 0.25) !important;
+      box-shadow: 0 0 20px rgba(91, 163, 255, 0.4);
+    }
+    #answerDisplaySection {
+      background: rgba(107, 157, 255, 0.18);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid rgba(107, 157, 255, 0.3);
+      animation: fadeIn 0.6s ease-out;
+    }
+    #answerDisplaySection p {
+      color: #5ba3ff;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    #typingText {
+      color: #5ba3ff;
+      font-weight: bold;
+      animation: fadeIn 0.8s ease-out;
+    }
+    #displayedAnswer {
+      color: #ffffff;
+      font-size: 1.2rem;
+      font-weight: 600;
+      animation: fadeIn 0.6s ease-out;
+    }
+    .success-message {
+      text-align: center;
+      font-size: 1.8rem;
+      color: #5ba3ff;
+      margin-bottom: 1.2rem;
+      animation: fadeIn 0.8s ease-out, pulse 2s ease-in-out 1s infinite;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-shadow: 0 4px 15px rgba(91, 163, 255, 0.4);
+    }
+    .message {
+      font-size: 0.95rem;
+      color: #f0f0f0;
+      line-height: 1.6;
+      padding: 1rem;
+      background: rgba(107, 157, 255, 0.18);
+      backdrop-filter: blur(10px);
+      border-left: 4px solid #5ba3ff;
+      border-radius: 12px;
+      animation: slideInLeft 0.8s ease-out;
+      border: 1px solid rgba(107, 157, 255, 0.3);
+      box-shadow: 0 8px 32px rgba(107, 157, 255, 0.2);
+      letter-spacing: 0.2px;
+    }
+    .signature {
+      text-align: center;
+      font-size: 1rem;
+      color: #5ba3ff;
+      margin-top: 1.2rem;
+      font-style: italic;
+      font-weight: 700;
+      animation: fadeIn 1.2s ease-out;
+      letter-spacing: 0.3px;
+      text-shadow: 0 2px 8px rgba(107, 157, 255, 0.4);
+    }
+    .button-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      margin-top: 3rem;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      flex: 1;
+      min-width: 150px;
+      padding: 1rem 2rem;
+      background: rgba(107, 157, 255, 0.22);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      color: white;
+      border: 1.5px solid rgba(107, 157, 255, 0.4);
+      border-left: #5ba3ff 4px solid;
+      border-right: #5ba3ff 4px solid;
+      border-radius: 16px;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      box-shadow: 0 8px 32px rgba(107, 157, 255, 0.25);
+      animation: slideInUp 0.8s ease-out;
+      letter-spacing: 0.5px;
+    }
+    .btn-primary:hover {
+      background: rgba(107, 157, 255, 0.28);
+      transform: translateY(-4px);
+      box-shadow: 0 14px 48px rgba(107, 157, 255, 0.35);
+      border-color: rgba(107, 157, 255, 0.6);
+    }
+    .btn-primary:active {
+      transform: translateY(-1px);
+      background: rgba(107, 157, 255, 0.35);
+    }
+    @keyframes slideInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      header .header-button {
+        font-size: 1.5rem;
+      }
+      .header-container {
+        padding: 1rem;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      section {
+        padding: 2rem 1rem;
+      }
+      section > h2 {
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem;
+        margin: 0 auto 2rem auto;
+      }
+     
+      .frame {
+        height: 200px;
+        padding: 0.5rem;
+      }
+      .contact {
+        padding: 1.5rem;
+        font-size: 0.95rem;
+      }
+      .love-message {
+        font-size: 1rem;
+        padding: 1.5rem;
+      }
+      .login-box {
+        padding: 2rem 1.5rem;
+      }
+      .login-box h1 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+      }
+      .login-box input {
+        padding: 0.75rem;
+        font-size: 0.95rem;
+      }
+      .login-box button {
+        padding: 0.75rem;
+      }
+      .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+      }
+    }
+    @media (max-width: 480px) {
+      body {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      header .header-button {
+        font-size: 1.2rem;
+      }
+      header {
+        padding: 1rem 0.5rem;
+      }
+      .header-container {
+        padding: 0.75rem 0.5rem;
+      }
+      section {
+        padding: 1.5rem 0.75rem;
+      }
+      section > h2 {
+        font-size: 1.2rem;
+        padding: 0.75rem 1rem;
+        margin: 0 auto 1.5rem auto;
+      }
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+      }
+      .frame {
+        height: 150px;
+        padding: 0.3rem;
+      }
+      .frame::before {
+        font-size: 1rem;
+        top: 8px;
+        right: 8px;
+      }
+      .contact {
+        padding: 1rem 0.75rem;
+        font-size: 0.9rem;
+      }
+      .contact h2 {
+        margin-bottom: 1rem;
+      }
+      .contact p {
+        margin: 0.5rem 0;
+      }
+      .love-message {
+        font-size: 0.95rem;
+        padding: 1rem 0.75rem;
+      }
+      .login-box {
+        padding: 1.5rem 1rem;
+        width: 90%;
+      }
+      .login-box h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      .login-box input {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+      }
+      .login-box button {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+      }
+      footer {
+        font-size: 0.9rem;
+      }
+      .back-to-top {
+        bottom: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- LOGIN PAGE -->
+  <div id="loginPage" class="login-container">
+    <div class="login-box">
+      <h1>Welcome My love.Please log in😊</h1>
+      <form id="loginForm">
+        <input type="text" id="username" placeholder="Username" required>
+          <input type="password" id="password" placeholder="Password" required>
+          <button type="submit">Log In</button>
+        </form>
+        <div id="loginError" class="login-error">Invalid username or password. Please try again.</div>
+      </div>
+    </div>
+<!-- SECRET CODE MODAL -->
+<div id="secretCodeModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: rgba(0, 0, 0, 0.95); z-index: 10000; justify-content: center; align-items: center; backdrop-filter: blur(10px);">
+  <div style="background: rgba(107, 157, 255, 0.15); backdrop-filter: blur(20px); border: 1px solid rgba(107, 157, 255, 0.3); border-left: #3b82f6 2px solid; border-right: #3b82f6 2px solid; border-radius: 24px; padding: 3rem; text-align: center; max-width: 450px; box-shadow: 0 25px 50px rgba(107, 157, 255, 0.2); animation: slideInUp 0.6s ease-out; position: relative;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+      <h2 style="color: #6b9dff; margin: 0; font-size: 2rem;"> LOCKED 🔒</h2>
+      <button onclick="document.getElementById('secretCodeModal').style.display='none';" style="background: rgba(107, 157, 255, 0.2); border: 1px solid rgba(107, 157, 255, 0.3); color: #ffffff; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.3rem; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(107, 157, 255, 0.35)'; this.style.boxShadow='0 8px 32px rgba(107, 157, 255, 0.3)'; this.style.transform='scale(1.1)';" onmouseout="this.style.background='rgba(107, 157, 255, 0.2)'; this.style.boxShadow='none'; this.style.transform='scale(1)';">&times;</button>
+    </div>
+    <p style="color: #e0e0e0; font-size: 1.1rem; margin: 0 0 1.5rem 0; line-height: 1.6;">This section is locked, babe! 💕Enter the secret code to unlock...</p>
+    <input type="password" id="secretCodeInput" placeholder="Enter secret code..." style="width: 100%; padding: 12px; border: 1px solid rgba(107, 157, 255, 0.3); border-radius: 12px; font-size: 1rem; background: rgba(107, 157, 255, 0.1); color: #ffffff; margin-bottom: 1rem; transition: all 0.3s ease;" onfocus="this.style.borderColor='#6b9dff'; this.style.boxShadow='0 0 20px rgba(107, 157, 255, 0.4)';" onblur="this.style.borderColor='rgba(107, 157, 255, 0.3)'; this.style.boxShadow='none';">
+    <button onclick="verifySecretCode()" style="width: 100%; padding: 12px; background: rgba(107, 157, 255, 0.15); border: 1px solid rgba(107, 157, 255, 0.3); border-left: #3b82f6 3px solid; border-right: #3b82f6 3px solid; border-radius: 12px; color: #ffffff; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 8px 24px rgba(107, 157, 255, 0.2);" onmouseover="this.style.background='rgba(107, 157, 255, 0.25)'; this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 32px rgba(107, 157, 255, 0.3)';" onmouseout="this.style.background='rgba(107, 157, 255, 0.15)'; this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 24px rgba(107, 157, 255, 0.2)';">UNLOCK 💕</button>
+    <p id="codeError" style="color: #ff6b6b; margin-top: 1rem; margin-bottom: 0; display: none; font-weight: 600;">Wrong code! Try again... 😔</p>
+  </div>
+</div>
+  </style>
+</head>
+<body>
+<!-- PORTFOLIO CONTENT -->
+    <div id="portfolioContent" class="portfolio-content">
+      <header>
+        <div class="header-container">
+          <button class="header-button">Ayanna Ariana💕</button>
+        </div>
+      </header>
+      <!-- WELCOME SECTION -->
+      <section id="welcome" style="padding: 0; background: transparent;">
+      
+          <!-- LOCKED CONTENT CONTAINER -->
+          <div style="width: 100%; max-width: 450px; margin: 0.5rem auto; background: rgba(107, 157, 255, 0.15); backdrop-filter: blur(20px); border: 1px solid rgba(107, 157, 255, 0.3); border-left: #3b82f6 3px solid; border-right: #3b82f6 3px solid; border-radius: 16px; padding: 1.5rem; box-shadow: 0 8px 32px rgba(107, 157, 255, 0.15); animation: slideInLeft 0.8s ease-out; transition: all 0.3s ease;">
+          
+            <!-- LOCKED CONTENT BUTTON -->
+            <button onclick="toggleLockedContent()" id="lockedContentBtn" style="width: 100%; background: transparent; border: none; padding: 0; text-align: left; cursor: pointer; color: inherit; font-family: inherit;" onmouseover="this.parentElement.style.background='rgba(107, 157, 255, 0.25)'; this.parentElement.style.boxShadow='0 12px 40px rgba(107, 157, 255, 0.3)';" onmouseout="this.parentElement.style.background='rgba(107, 157, 255, 0.15)'; this.parentElement.style.boxShadow='0 8px 32px rgba(107, 157, 255, 0.15)';">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h1 style="margin: 0; font-size: 2rem; color: #ffffff;">Special Message❤️</h1>
+                <span id="lockedToggle" style="color: #6b9dff; font-size: 1.5rem; transition: all 0.3s ease;">+</span>
+              </div>
+            </button>
+            <!-- LOCKED CONTENT (INNER) -->
+            <div id="lockedContentContainer" style="display: none; margin-top: 1rem;">
+          
+              <!-- TAP PLEASE BUTTON -->
+              <div style="width: 100%; margin: 0.5rem auto; background: rgba(15, 15, 35, 0.8); backdrop-filter: blur(20px); border: 1px solid rgba(91, 163, 255, 0.4); border-radius: 16px; padding: 1.5rem; text-align: left; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 8px 32px rgba(91, 163, 255, 0.25); animation: slideInLeft 0.8s ease-out;" onmouseover="this.style.background='rgba(20, 20, 45, 0.95)'; this.style.boxShadow='0 12px 40px rgba(91, 163, 255, 0.35)';" onmouseout="this.style.background='rgba(15, 15, 35, 0.8)'; this.style.boxShadow='0 8px 32px rgba(91, 163, 255, 0.25)';">
+                <button onclick="toggleSection('haebabeContent')" style="width: 100%; background: transparent; border: none; padding: 0; text-align: left; cursor: pointer;">
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h1 style="margin: 0; font-size: 2rem; color: #7cb3ff;">Welcome text</h1>
+                    <span id="haebabetoggle" style="color: #6b9dff; font-size: 1.5rem; transition: all 0.3s ease;">+</span>
+                  </div>
+                </button>
+                <div id="haebabeContent" style="display: none; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(91, 163, 255, 0.3); animation: slideInUp 0.4s ease-out;">
+                  <p style="color: #d1d5ff; line-height: 1.8; margin: 0; font-weight: 500;">Welcome to your special Valentine's Day website my Beautiful girl😊.</p>
+                  <p style="color: #d1d5ff; line-height: 1.8; margin: 1rem 0 0 0; font-weight: 500;">Happy Valentine's Day, my love🌹</p>
+                </div>
+              </div>
+              
+              <!-- MY QUEEN BUTTON -->
+              <div style="width: 100%; margin: 0.5rem auto; background: rgba(15, 15, 35, 0.8); backdrop-filter: blur(20px); border: 1px solid rgba(91, 163, 255, 0.4); border-radius: 16px; padding: 1.5rem; text-align: left; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 8px 32px rgba(91, 163, 255, 0.25); animation: slideInLeft 0.8s ease-out;" onmouseover="this.style.background='rgba(20, 20, 45, 0.95)'; this.style.boxShadow='0 12px 40px rgba(91, 163, 255, 0.35)';" onmouseout="this.style.background='rgba(15, 15, 35, 0.8)'; this.style.boxShadow='0 8px 32px rgba(91, 163, 255, 0.25)';">
+                <button onclick="toggleSection('myqueenContent')" style="width: 100%; background: transparent; border: none; padding: 0; text-align: left; cursor: pointer;">
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h2 style="margin: 0; color: #7cb3ff;">My Queen's message❤️</h2>
+                    <span id="myqueentoggle" style="color: #5ba3ff; font-size: 1.5rem; transition: all 0.3s ease;">+</span>
+                  </div>
+                </button>
+                <div id="myqueenContent" style="display: none; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(91, 163, 255, 0.3); animation: slideInUp 0.4s ease-out;">
+                  <h3 style="color: #5ba3ff; margin-top: 0; font-weight: 600;">Babe hii ni yako😍...</h3>
+                  <p style="color: #d1d5ff; line-height: 1.8; margin: 0; font-weight: 500;">You are my happiness, my strength and my everything❤️.</p>
+                  <p style="color: #d1d5ff; line-height: 1.8; margin: 1rem 0 0 0; font-weight: 500;">Am grateful for your loyalty, grateful for the good memories.We can call today our Forth anniversery.That means we've loved each other four years🙆🤭,Four years babe,That's really true love.Although we never had a chance to stay together as lovers.We might be apart,but our hearts as you said,are together💞.</p>
+                  <p style="color: #d1d5ff; line-height: 1.8; margin: 1rem 0 0 0; font-weight: 500;">Love you forever and always, my angel. 💖</p>
+                </div>
+              </div>
+              
+              <!-- LOVE METER SECTION BUTTON -->
+              <div style="width: 100%; margin: 0.5rem auto; background: rgba(15, 15, 35, 0.8); backdrop-filter: blur(20px); border: 1px solid rgba(91, 163, 255, 0.4); border-radius: 16px; padding: 1.5rem; text-align: left; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 8px 32px rgba(91, 163, 255, 0.25); animation: slideInLeft 0.8s ease-out;" onmouseover="this.style.background='rgba(20, 20, 45, 0.95)'; this.style.boxShadow='0 12px 40px rgba(91, 163, 255, 0.35)';" onmouseout="this.style.background='rgba(15, 15, 35, 0.8)'; this.style.boxShadow='0 8px 32px rgba(91, 163, 255, 0.25)';">
+                <button onclick="toggleSection('loveMeterContent')" style="width: 100%; background: transparent; border: none; padding: 0; text-align: left; cursor: pointer;">
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div style="display: flex; align-items: center; gap: 0.8rem;">
+                      <span style="font-size: 2rem;">❤️</span>
+                      <h2 style="margin: 0; color: #7cb3ff;">Our Love Story</h2>
+                    </div>
+                    <span id="loveMeterToggle" style="color: #5ba3ff; font-size: 1.5rem; transition: all 0.3s ease;">+</span>
+                  </div>
+                </button>
+                <div id="loveMeterContent" style="display: none; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(91, 163, 255, 0.3); animation: slideInUp 0.4s ease-out;">
+                  <p style="color: #d1d5ff; font-size: 1.1rem; margin: 0 0 1.5rem 0; text-align: center; font-weight: 500;">Our Love Journey Together</p>
+                  
+                  <!-- Love Meter Progress Ring -->
+                  <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                    <svg width="140" height="140" style="transform: rotate(-90deg); filter: drop-shadow(0 0 15px rgba(91, 163, 255, 0.4));">
+                      <!-- Background circle -->
+                      <circle cx="70" cy="70" r="60" fill="none" stroke="rgba(91, 163, 255, 0.2)" stroke-width="6" />
+                      <!-- Animated progress circle (100%) -->
+                      <circle cx="70" cy="70" r="60" fill="none" stroke="url(#loveMeterGradient)" stroke-width="6" stroke-linecap="round" stroke-dasharray="377" stroke-dashoffset="0" style="animation: fillLove 2.5s ease-in-out infinite;" />
+                      <!-- Gradient definition -->
+                      <defs>
+                        <linearGradient id="loveMeterGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" style="stop-color:#5ba3ff;stop-opacity:1" />
+                          <stop offset="50%" style="stop-color:#7cb3ff;stop-opacity:1" />
+                          <stop offset="100%" style="stop-color:#5ba3ff;stop-opacity:1" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <div style="position: absolute; display: flex; flex-direction: column; align-items: center; justify-content: center; max-width: 110px;">
+                      <div style="font-size: 1.1rem; font-weight: 700; color: #FFD700; text-align: center; line-height: 1.1; word-wrap: break-word;">Stella & Zach</div>
+                    </div>
+                  </div>
+                  
+                  <!-- Stats Section -->
+                  <div style="display: flex; justify-content: space-around; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+                    <div style="flex: 1; min-width: 120px; background: rgba(107, 157, 255, 0.15); padding: 1rem; border-radius: 12px; border: 1px solid rgba(91, 163, 255, 0.3);">
+                      <div style="color: #5ba3ff; font-size: 1.8rem; font-weight: 700; margin-bottom: 0.5rem;">4</div>
+                      <div style="color: #d1d5ff; font-size: 0.9rem; font-weight: 500;">Years Together</div>
+                    </div>
+                    <div style="flex: 1; min-width: 120px; background: rgba(107, 157, 255, 0.15); padding: 1rem; border-radius: 12px; border: 1px solid rgba(91, 163, 255, 0.3);">
+                      <div style="color: #5ba3ff; font-size: 1.8rem; font-weight: 700; margin-bottom: 0.5rem;">∞</div>
+                      <div style="color: #d1d5ff; font-size: 0.9rem; font-weight: 500;">Endless Love</div>
+                    </div>
+                   
+                  </div>
+                  
+                  <p style="color: #e0d5ff; line-height: 1.8; margin: 0; font-weight: 500; font-size: 0.95rem; text-align: center;">4 beautiful years of loyalty, memories, and true love. Even though distance keeps our bodies apart, our hearts remain forever intertwined.</p>
+                </div>
+              </div>
+              
+              <!-- VALENTINE'S QUIZ BUTTON -->
+              <div style="width: 100%; margin: 0.5rem auto; background: rgba(107, 157, 255, 0.15); backdrop-filter: blur(20px); border: 1px solid rgba(107, 157, 255, 0.3); border-left: #3b82f6 3px solid; border-right: #3b82f6 3px solid; border-radius: 16px; padding: 1.5rem; text-align: left; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 8px 32px rgba(107, 157, 255, 0.15); animation: slideInLeft 0.8s ease-out;" onmouseover="this.style.background='rgba(107, 157, 255, 0.25)'; this.style.boxShadow='0 12px 40px rgba(107, 157, 255, 0.3)';" onmouseout="this.style.background='rgba(107, 157, 255, 0.15)'; this.style.boxShadow='0 8px 32px rgba(107, 157, 255, 0.15)';">
+                <button onclick="toggleSection('quizContent')" style="width: 100%; background: transparent; border: none; padding: 0; text-align: left; cursor: pointer;">
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h2 style="margin: 0; color: #ffffff;">Valentine's Quiz 💕</h2>
+                    <span id="quizToggle" style="color: #6b9dff; font-size: 1.5rem; transition: all 0.3s ease;">+</span>
+                  </div>
+                </button>
+                <div id="quizContent" style="display: none; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(107, 157, 255, 0.2); animation: slideInUp 0.4s ease-out;">
+                  <p style="color: #6b9dff; font-weight: 600; margin-top: 0; margin-bottom: 1.5rem;">Ukianza kujibu usiskip🥺...Sawa..?We have a few questions nimekwekea hapa so nice time as you go through them.</p>
+                  <div class="content" id="questionContainer">
+              <!-- Question 1 -->
+              <div class="question-section" id="question1">
+                <div style="background: rgba(107, 157, 255, 0.15); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 12px; padding: 20px; margin-bottom: 20px;">
+                  <div class="question">Babe...What's your favorite thing about us? 😊</div>
+                </div>
+                <div class="answer-options">
+                  <button class="btn-option" onclick="answerQuestion(1, 'Understanding each other')">Understanding each other</button>
+                  <button class="btn-option" onclick="answerQuestion(1, 'Our amazing memories')">Our amazing memories</button>
+                  <button class="btn-option" onclick="answerQuestion(1, 'All of the above!')">All of the above! 🌟</button>
+                </div>
+              </div>
+              <!-- Question 2 -->
+              <div class="question-section hidden" id="question2">
+                <div class="question">
+                  kama mapenzi yetu ni movie,😁Tungekuwa nini?</div>
+                <div class="answer-options">
+                  <button class="btn-option" onclick="answerQuestion(2, 'A romantic comedy')">A romantic comedy</button>
+                  <button class="btn-option" onclick="answerQuestion(2, 'Hakuna😁')">Hakuna😁</button>
+                  <button class="btn-option" onclick="answerQuestion(2, 'Tungekuwa a beautiful love story')">Tungekuwa a beautiful love story</button>
+                </div>
+              </div>
+              <!-- Question 3 -->
+              <div class="question-section hidden" id="question3">
+                <div class="question">...Unanipenda🤔?</div>
+                <div class="answer-options">
+                  <button class="btn-option" onclick="answerQuestion(3, 'Sikupendi')">Sikupendi</button>
+                </div>
+                <div style="margin-top: 20px; text-align: center;" id="customAnswerInput">
+                  <p style="color: blanchedalmond; font-weight: bold; margin-bottom: 10px;">Hiyo nimekuwekea option moja😁Kama uko na ingine niandikie hapa chini😝👇.</p>
+                  <input type="text" id="customAnswer" placeholder="Babe niandikie jibu hapa🥺..." style="width: 100%; padding: 12px; border: 2px solid #6b9dff; border-radius: 10px; font-size: 14px; font-family: Arial;">
+                  <button class="btn-option" onclick="submitCustomAnswer()" style="margin-top: 10px; width: 100%;">Submit Your Answer 💕</button>
+                </div>
+                <div style="margin-top: 20px; text-align: center; display: none;" id="answerDisplaySection">
+                  <p style="color: #5f44f8; font-weight: bold; margin-bottom: 10px;">
+                    <span id="typingText"></span>
+                  </p>
+                  <div style="background: rgba(0, 0, 0, 0.3); border: 2px solid rgba(107, 157, 255, 0.4); border-radius: 15px; padding: 15px; margin: 10px 0; font-size: 16px; color: #ffffff; font-weight: bold;">
+                    <span id="displayedAnswer"></span>
+                  </div>
+                  <button class="btn-option" onclick="nextQuestion()" style="margin-top: 10px; width: 100%;">Continue to your secret Message 💌</button>
+                </div>
+              </div>
+              <!-- Final Message -->
+              <div class="question-section hidden" id="finalMessage">
+                <div style="background: rgba(107, 157, 255, 0.15); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 12px; padding: 20px; margin-bottom: 20px;">
+                  <div class="success-message">Babe😍😊...</div>
+                </div>
+                <p class="message">
+                  Every moment is a blessing nikikumbuka Your laugh, your kindness and your beautiful soul.
+                  On this Valentine's Day, I want you to know how deeply I cherish you.
+                </p>
+                <p class="message" style="margin-top: 15px;">
+                  Thank you for being the amazing person you are. 
+                  Let's continue to create more beautiful memories together! 🌹
+                  I love you and will always cherish you. Happy Valentine's Day, my love! 💖
+                </p>
+                <div class="signature">
+                  From your Love,
+                  Riah 💕
+                </div>
+              </div>
+                </div>
+                <div class="button-group" id="buttonGroup">
+                  <button class="btn-primary" onclick="nextQuestion()">Next Question ➜</button>
+                  <button class="btn-primary" onclick="restartQuiz()">Turudie Tena kutoka mwanzo?🫣</button>
+                </div>
+              </div>
+          </div>
+          
+            </div> <!-- END OF LOCKED CONTENT (INNER) -->
+            
+          </div> <!-- END OF MAIN LOCKED CONTENT CONTAINER -->
+          
+      </section>
+    </div>
+
+  </div>
+<!-- BACK TO TOP BUTTON -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">Top</button>
+ 
+  </div> <!-- END OF PORTFOLIO CONTENT -->
+  
+  
+<!--JAVASCRIPT-->
+  <script>
+   
+    // GO BACK TO HOME
+    function goBackHome() {
+      window.location.href = 'index.html';
+    }
+
+  // Login functionality
+  const loginForm = document.getElementById('loginForm');
+  const loginPage = document.getElementById('loginPage');
+  const portfolioContent = document.getElementById('portfolioContent');
+  const loginError = document.getElementById('loginError');
+  // Set default credentials (username: Stella, password: Zach)
+  const validUsername = 'Stella';
+  const validPassword = 'Zach';
+  loginForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    if (username === validUsername && password === validPassword) {
+      loginPage.style.display = 'none';
+      portfolioContent.classList.add('active');
+      loginError.style.display = 'none';
+      localStorage.setItem('isLoggedIn', 'true');
+    } else {
+      loginError.style.display = 'block';
+      document.getElementById('password').value = '';
+    }
+  });
+  // Check if user is already logged in
+  if (localStorage.getItem('isLoggedIn') === 'true') {
+    loginPage.style.display = 'none';
+    portfolioContent.classList.add('active');
+  }
+
+  // Back to top functionality
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.add('show');
+    } else {
+      backToTopBtn.classList.remove('show');
+    }
+  });
+  backToTopBtn.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+  // Toggle section function
+  function toggleSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    const toggle = document.getElementById(sectionId + 'Toggle');
+    
+    if (section.style.display === 'none' || section.style.display === '') {
+      section.style.display = 'block';
+      toggle.textContent = '−';
+    } else {
+      section.style.display = 'none';
+      toggle.textContent = '+';
+    }
+  }
+  // Toggle locked content function
+  function toggleLockedContent() {
+    const container = document.getElementById('lockedContentContainer');
+    const toggle = document.getElementById('lockedToggle');
+    
+    if (container.style.display === 'none' || container.style.display === '') {
+      container.style.display = 'block';
+      toggle.textContent = '−';
+    } else {
+      container.style.display = 'none';
+      toggle.textContent = '+';
+    }
+  }
+  // Small JS greeting
+  console.log("Welcome to Riah Kibz's Portfolio ❤️");
+</script>
+<!-- FOOTER -->
+<footer class="footer">
+  <button class="footer-btn">Stella & Zach Forever ❤️</button>
+</footer>
+<!-- Existing scripts -->
+<script>
+  // your existing login/back-to-top scripts here
+</script>
+<!-- Valentine Quiz JS -->
+<script>
+  let currentQuestion = 1;
+  function answerQuestion(questionNum, answer) {
+      console.log(`Question ${questionNum} answered: ${answer}`);
+      nextQuestion();
+  }
+  function typeText(text, elementId, speed = 50, callback) {
+      const element = document.getElementById(elementId);
+      element.textContent = '';
+      let i = 0;
+      const interval = setInterval(() => {
+          element.textContent += text.charAt(i);
+          i++;
+          if (i >= text.length) {
+              clearInterval(interval);
+              if (callback) callback();
+          }
+      }, speed);
+  }
+  function submitCustomAnswer() {
+      const customAnswer = document.getElementById('customAnswer').value;
+      if (customAnswer.trim() === '') {
+          alert('Your beautiful answer 💕');
+          return;
+      }
+      document.getElementById('customAnswerInput').style.display = 'none';
+      document.getElementById('answerDisplaySection').style.display = 'block';
+      typeText('Wacha nione umeandika nini hiyo😁', 'typingText', 50, () => {
+          typeText(customAnswer, 'displayedAnswer', 50);
+      });
+  }
+  function nextQuestion() {
+      if (currentQuestion < 3) {
+          document.getElementById(`question${currentQuestion}`).classList.add('hidden');
+          currentQuestion++;
+          document.getElementById(`question${currentQuestion}`).classList.remove('hidden');
+      } else {
+          document.getElementById(`question${currentQuestion}`).classList.add('hidden');
+          document.getElementById('finalMessage').classList.remove('hidden');
+          document.getElementById('buttonGroup').style.justifyContent = 'center';
+      }
+  }
+  function restartQuiz() {
+      document.getElementById(`question${currentQuestion}`).classList.add('hidden');
+      document.getElementById('finalMessage').classList.add('hidden');
+      currentQuestion = 1;
+      document.getElementById('question1').classList.remove('hidden');
+      document.getElementById('buttonGroup').style.justifyContent = 'space-between';
+      document.getElementById('customAnswer').value = '';
+      document.getElementById('answerDisplaySection').style.display = 'none';
+      document.getElementById('typingText').textContent = '';
+      document.getElementById('displayedAnswer').textContent = '';
+  }
+  // BACK TO TOP BUTTON FUNCTIONALITY
+  const backToTopBtn = document.getElementById('backToTop');
+  
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.add('show');
+    } else {
+      backToTopBtn.classList.remove('show');
+    }
+  });
+  
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+  
+</script>
+
+</body>
+</html>
